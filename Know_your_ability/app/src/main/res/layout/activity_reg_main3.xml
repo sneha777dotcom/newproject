@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg"
+    tools:context=".RegMainActivity3">
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="421dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/loginn" />
+
+
+    <EditText
+        android:id="@+id/edtfrstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:textSize="16dp"
+        android:hint="ENTER  USERNAME"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/pss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:layout_below="@+id/desiredusername"
+        android:layout_alignLeft="@+id/desiredusername"
+        android:layout_marginTop="14dp"
+        android:drawableLeft="@drawable/ic_action_pss"
+        android:textSize="16dp"
+        android:ems="10"
+        android:hint="ENTER  PASSWORD"
+        android:inputType="textPassword"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/pss"
+        android:layout_alignLeft="@+id/pss"
+        android:text="Log In" />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:text="Register" />
+
+</LinearLayout>

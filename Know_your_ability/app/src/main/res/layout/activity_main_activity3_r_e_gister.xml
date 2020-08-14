@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3REGister">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtfrstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter your first name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        />
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtlastname"
+        android:layout_below="@+id/edtfrstname"
+        android:layout_alignLeft="@+id/edtfrstname"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="Enter last name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desiredusername"
+        android:layout_below="@+id/edtlastname"
+        android:ems="10"
+        android:hint="desired_username"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pss"
+        android:layout_alignLeft="@+id/desiredusername"
+        android:layout_below="@+id/desiredusername"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repss"
+        android:layout_alignLeft="@+id/pss"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/pss"
+        android:ems="10"
+        android:hint="Re-enter password"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/validemail"
+        android:layout_alignLeft="@+id/repss"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/repss"
+
+        android:ems="10"
+        android:hint="Enter valid Email id(optional)"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        />
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/validemail"
+        android:layout_alignLeft="@+id/validemail"
+        android:text="Register" />
+
+</RelativeLayout>

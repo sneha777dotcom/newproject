@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gaming.know_your_ability"
+    tools:ignore="ExtraText">
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/kyaaaicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.gaming.know_your_ability.Home.HomeActivity"/>
+
+
+        <activity android:name=".videoplayActivity" />
+        <activity android:name=".video" />
+        <activity android:name=".Homepage" />
+        <activity android:name=".Like.LikeActivity"/>
+        <activity android:name="com.gaming.know_your_ability.Profile.ProfileActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/app_name"
+            >
+
+        </activity>
+        <activity android:name=".Profile.AccountSettingActivity"/>
+        <activity android:name=".Search.SearchActivity"/>
+        <activity android:name=".Share.ShareActivity"/>
+        <activity android:name=".MainActivity3REGister" />
+        <activity android:name=".RegMainActivity3" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
